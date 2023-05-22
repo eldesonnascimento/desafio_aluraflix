@@ -1,11 +1,15 @@
-
+import Header from "./Components/Header";
+import {GlobalStyle} from "./styles"
 
 function App() {
   return (
     <div className="App">
-      <header>
-        <p>ola mundo</p>
-      </header>
+      <>
+      <GlobalStyle/>
+      <Header/>
+      
+      </>
+
     </div>
   );
 }
