@@ -1,11 +1,12 @@
-import './App.css';
+
 
 function App() {
   return (
-  <>
-   
-  </>
-   
+    <div className="App">
+      <header>
+        <p>ola mundo</p>
+      </header>
+    </div>
   );
 }
 
