@@ -10,15 +10,15 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 export const Botao = styled.button`
-background-color: #ccccc2;
-color: red;
-border-style:none;
+background-color: transparent;
+color: white;
+border-style:solid white;
 border-radius: 20%;
 font-size:150%;
 margin-right:7%;
 
 `;
-export const Logo = styled.p`
+export const Logo = styled.h2`
 padding-left:20%;
 font-size:200%;
 color:red;
@@ -43,4 +43,15 @@ justify-content:center;
 @media (max-width: 600px) {
   gap:30%;
 }
+`;
+export const Rodape = styled.div`
+  background-color:black;
+  border-top: 1px solid red;
+  width:101%;
+`;
+export const Paragrafo = styled.h2`
+text-align:center;
+color: red;
+font-size:300%
+
 `;
