@@ -1,9 +1,8 @@
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
-import { GlobalStyle } from "./styles";
+import GlobalStyle from "./Components/Globais";
 import Inicio from "./Páginas/Inicio";
-import NovoVideo from "./Páginas/NovoVideo";
-import { createRoot } from "react-dom/client";
+import NovoVideo from "./Páginas/Cadastro/VideoCadastro";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -11,7 +10,7 @@ import {
   BrowserRouter,
   Routes,
 } from "react-router-dom";
-import NovaCategoria from "./Páginas/NovaCategoria";
+import NovaCategoria from "./Páginas/Cadastro/CategoriaCadastro";
 
 function App() {
   return (
@@ -24,11 +23,9 @@ function App() {
             <Route path="/novacategoria" element={<NovaCategoria />} />
             <Route path="*" element={<div>Página não Encontrada</div>} />
           </Routes>
+          <GlobalStyle />
         </BrowserRouter>
       </>
-      {/* <GlobalStyle/>
-      <Header/>
-      <Footer/> */}
     </div>
   );
 }
