@@ -5,21 +5,26 @@ import Footer from "../../../Components/Footer";
 import Botao from "../../../Components/Button";
 
 const Container = styled.div`
-  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   font-size: 10px;
   background-color: var(--cor-fundo);
-  height: 100vh;
-  width: 100vw;
+  width: 100%;
+  padding: 32px;
+  height: 100%;
+
+  main {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 
   title {
-    display: block;
+    color: white;
     text-align: center;
-    font-size: 40px;
-    color: #f5f5f5;
-    margin-bottom: 50px;
+    display: block;
+    height: 70px;
+    width: 299px;
   }
 
   label {
@@ -28,13 +33,46 @@ const Container = styled.div`
   }
 
   input {
-    width: 94vw;
+    width: calc(100% - 5.55%);
   }
 
-  textarea {
-    width: 94vw;
-    border-style: none;
-    resize: none;
+  ul li {
+    height: 50px;
+    padding-top: 30px;
+    list-style: none;
+    padding-bottom: 30px;
+  }
+  ul li input {
+    background-color: #53585d;
+    color: white;
+    border: none;
+    padding-left: 8px;
+    border-radius: 4px;
+    display: block;
+  }
+  li input:nth-child(5) {
+    height: 153px;
+  }
+  input::placeholder {
+    color: white;
+  }
+`;
+const ContainerBTN = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1%;
+
+  a {
+    width: 180px;
+    text-align: center;
+  }
+
+  a:nth-child(2) {
+    background-color: #9e9e9e;
+    color: #000000;
   }
 `;
 
@@ -49,47 +87,41 @@ export default function NovoVideo() {
               <div>
                 <title>Novo Vídeo</title>
               </div>
-              <div>
-                <label>Título</label>
-                <input type="text" placeholder="Título"></input>
-              </div>
 
-              <div>
-                <label>Link do Vídeo</label>
-                <input type="text" placeholder="Link do Vídeo"></input>
-              </div>
+              <ul>
+                <li>
+                  <input type="text" placeholder="Título"></input>
+                </li>
 
-              <div>
-                <label>Link da imagem do Vídeo</label>
-                <input
-                  type="text"
-                  placeholder="Link da imagem do Vídeo"
-                ></input>
-              </div>
+                <li>
+                  <input type="text" placeholder="Link do Vídeo"></input>
+                </li>
+                <li>
+                  <input
+                    type="text"
+                    placeholder="Link da imagem do Vídeo"
+                  ></input>
+                </li>
+                <li>
+                  <input type="text" placeholder="Escolha a categoria"></input>
+                </li>
+                <li>
+                  <input type="text" placeholder="Descrição"></input>
+                </li>
+                <li>
+                  <input placeholder="Código de Segurança"></input>
+                </li>
+              </ul>
 
-              <div>
-                <label>Escolha a categoria</label>
-                <input type="text" placeholder="Escolha a categoria"></input>
-              </div>
-
-              <div>
-                <label>Descrição</label>
-                <textarea type="text" placeholder="Descrição"></textarea>
-              </div>
-
-              <div>
-                <label>Código de Segurança</label>
-                <input placeholder="Código de Segurança"></input>
-              </div>
-              <div>
-                <nav>
+              <nav>
+                <ContainerBTN>
                   <Botao>salvar</Botao>
-                  <div>
-                    <Botao>limpar</Botao>
-                  </div>
+
+                  <Botao>limpar</Botao>
+
                   <Botao to="/novacategoria">Nova Categoria</Botao>
-                </nav>
-              </div>
+                </ContainerBTN>
+              </nav>
             </Container>
           </div>
         </form>

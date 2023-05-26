@@ -1,28 +1,33 @@
 import React from "react";
 import Botao from "../Button";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
 import Logo from "../Logotipo";
 
 const NavContainer = styled.div`
-  width: 100vw;
+  width: 100%;
   flex-direction: row;
   display: flex;
-  gap: 70%;
+  gap: 10%;
   background-color: black;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding-bottom: 32px;
-  gap: 70%;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  height: 50px;
+ 
+  a{
+    margin-right: 1rem;
+  }
 
   @media (max-width: 768px) {
-    gap: 40%;
+    gap: 9%;
   }
   @media (max-width: 300px) {
-    gap: 20%;
+    gap: 9%;
   }
   @media (max-width: 600px) {
-    gap: 10%;
+    gap: 22%;
   }
 `;
 
