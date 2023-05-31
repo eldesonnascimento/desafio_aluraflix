@@ -7,5 +7,5 @@ export default createGlobalStyle`
     box-sizing: border-box;
     --cor-logo:#2a7ae4;
     --cor-fundo:#000000;
-  }
+     }
 `;

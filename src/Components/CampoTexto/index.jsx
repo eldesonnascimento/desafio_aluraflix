@@ -1,11 +1,12 @@
 import React from "react";
 
-function CampoTexto(){
-  return(
+function CampoTexto(props) {
+  return (
     <>
-    <form>
-      <p>novaCategoria</p>
-    </form>
+      <div>
+        <input type="text" placeholder={props.placeholder}/>
+      </div>
     </>
-  )
+  );
 }
+export default CampoTexto;

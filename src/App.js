@@ -1,11 +1,7 @@
-import Footer from "./Components/Footer";
-import Header from "./Components/Header";
 import GlobalStyle from "./Components/Globais";
 import Inicio from "./Páginas/Inicio";
 import NovoVideo from "./Páginas/Cadastro/VideoCadastro";
 import {
-  createBrowserRouter,
-  RouterProvider,
   Route,
   BrowserRouter,
   Routes,

@@ -12,11 +12,16 @@ const Button = styled(Link)`
   white-space: nowrap;
   padding:10px;
   margin-bottom: 14px;
+  transition: opacity 0.01s;
+  &:hover{
+    background-color: var(--cor-logo);
+    opacity: 0.8;
+  }
 `;
 function Botao(props) {
+  console.log(props);
   return (
     <>
-     
         <Button to={props.to}>{props.children}</Button>
      
     </>

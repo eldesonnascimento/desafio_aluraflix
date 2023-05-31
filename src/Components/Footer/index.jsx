@@ -15,6 +15,7 @@ const Rodape = styled.div`
     text-align: center;
     font-size: 50px;
   }
+
 `;
 
 function Footer(){

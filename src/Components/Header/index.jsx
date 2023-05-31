@@ -31,7 +31,7 @@ const NavContainer = styled.div`
   }
 `;
 
-function Header() {
+function Header({children}) {
   return (
     <>
       <nav>
@@ -41,7 +41,7 @@ function Header() {
           </div>
 
           <div>
-            <Botao to="/novovideo">novo video</Botao>
+            {children}
           </div>
         </NavContainer>
       </nav>
