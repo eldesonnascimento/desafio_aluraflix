@@ -1,4 +1,4 @@
-import GlobalStyle from "./Components/Globais";
+import GlobalStyle from "./Globais";
 import Inicio from "./Páginas/Inicio";
 import NovoVideo from "./Páginas/Cadastro/VideoCadastro";
 import {

@@ -24,29 +24,15 @@ const Container = styled.div`
   }
 
   label {
-    display: block;
     color: #f5f5f5;
   }
 
   input {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  ul li {
-    height: 50px;
-    padding-top: 30px;
-    list-style: none;
-    padding-bottom: 30px;
-  }
-  input {
-    background-color: #53585d;
+    background-color: #404142;
     color: white;
     border: none;
     padding-left: 8px;
     border-radius: 4px;
-    display: block;
   }
   input:nth-child(5) {
     height: 153px;
@@ -124,18 +110,22 @@ export default function NovoVideo() {
               <div>
                 <title>Novo Vídeo</title>
               </div>
-              <CampoTexto placeholder="Título" />
-              <CampoTexto placeholder="Link do Vídeo" />
-              <CampoTexto placeholder="Link da imagem do Vídeo" />
-              <CampoTexto placeholder="Escolha uma Categoria" />
-              <div>
-                <textarea
-                  className="descricao"
-                  type="text"
-                  placeholder="Descrição"
-                ></textarea>
-              </div>
-              <CampoTexto className="codigo__seguranca" placeholder="Código de Segurança" />
+
+              <CampoTexto
+                label="Título"
+                InputProps={{
+                  style: { borderColor: "white" },
+                }}
+                focused
+              />
+              <CampoTexto label="Link do Vídeo" />
+              <CampoTexto label="Link da imagem do Vídeo" />
+              <CampoTexto label="Escolha uma Categoria" />
+              <CampoTexto label="Descrição" />
+              <CampoTexto
+                className="codigo__seguranca"
+                label="Código de Segurança"
+              />
               <nav>
                 <ContainerBTN>
                   <Botao>salvar</Botao>

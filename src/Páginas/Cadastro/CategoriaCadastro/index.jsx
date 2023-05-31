@@ -2,6 +2,7 @@ import Botao from "../../../Components/Button";
 import styled from "styled-components";
 import Header from "../../../Components/Header";
 import Footer from "../../../Components/Footer";
+import CampoTexto from "../../../Components/CampoTexto";
 
 const ContainerCadastro = styled.div`
   display: flex;
@@ -124,6 +125,7 @@ function NovaCategoria() {
               <div>
                 <title>Novo Vídeo</title>
               </div>
+              <CampoTexto label="Nome"  />
               <ul>
                 <li>
                   <input placeholder="Nome"></input>
