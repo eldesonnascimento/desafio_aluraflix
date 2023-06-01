@@ -12,6 +12,10 @@ const ContainerVideo = styled.div`
     justify-content: center;
     background-color: black;
     width: 100%;
+    img{
+      width: 200px;
+      height:220px;
+    }
     h2 {
       color: white;
 
