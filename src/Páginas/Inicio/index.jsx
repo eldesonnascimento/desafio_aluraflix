@@ -1,22 +1,38 @@
-import { Container } from "@material-ui/core";
 import Botao from "../../Components/Button";
 import Footer from "../../Components/Footer";
 import Header from "../../Components/Header";
-import styled from "styled-components"
+import styled from "styled-components";
+
 const ContainerVideo = styled.div`
-  main{
+  main {
     display: flex;
-  flex-direction: row;
- 
-  flex-wrap: wrap;
-  justify-content: center;
-  background-color: black;
-  width: 100%;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    h2 {
+      color: white;
+
+    }
   }
-  div{
-    margin:32px 32px;
+  div {
+    margin: 12px 12px;
   }
 `;
+
+const Categoria1 = styled.div`
+  overflow-x: auto;
+  display: flex;
+  justify-content: flex-start;
+`;
+const Categoria2 = styled.div`
+  overflow-x: auto;
+  display: flex;
+  justify-content: flex-start;
+`;
+
 export default function Inicio() {
   return (
     <>
@@ -26,29 +42,51 @@ export default function Inicio() {
       <ContainerVideo>
         <main>
           <div>
-            <img src="http://github.com/franciscocha.png" alt="alura" />
+            <h2>categoria 1</h2>
           </div>
+          <Categoria1>
+            <div>
+              <img src="http://github.com/franciscocha.png" alt="alura" />
+            </div>
+            <div>
+              <img src="http://github.com/franciscocha.png" alt="alura" />
+            </div>
+            <div>
+              <img src="http://github.com/franciscocha.png" alt="alura" />
+            </div>
+            <div>
+              <img src="http://github.com/franciscocha.png" alt="alura" />
+            </div>
+            <div>
+              <img src="http://github.com/franciscocha.png" alt="alura" />
+            </div>
+            <div>
+              <img src="http://github.com/franciscocha.png" alt="alura" />
+            </div>
+          </Categoria1>
           <div>
-            <img src="http://github.com/franciscocha.png" alt="alura" />
+            <h2>categoria 2</h2>
           </div>
-          <div>
-            <img src="http://github.com/franciscocha.png" alt="alura" />
-          </div>
-          <div>
-            <img src="http://github.com/franciscocha.png" alt="alura" />
-          </div>
-          <div>
-            <img src="http://github.com/franciscocha.png" alt="alura" />
-          </div>
-          <div>
-            <img src="http://github.com/franciscocha.png" alt="alura" />
-          </div>
-          <div>
-            <img src="http://github.com/franciscocha.png" alt="alura" />
-          </div>
-          <div>
-            <img src="http://github.com/franciscocha.png" alt="alura" />
-          </div>
+          <Categoria2>
+            <div>
+              <img src="http://github.com/franciscocha.png" alt="alura" />
+            </div>
+            <div>
+              <img src="http://github.com/franciscocha.png" alt="alura" />
+            </div>
+            <div>
+              <img src="http://github.com/franciscocha.png" alt="alura" />
+            </div>
+            <div>
+              <img src="http://github.com/franciscocha.png" alt="alura" />
+            </div>
+            <div>
+              <img src="http://github.com/franciscocha.png" alt="alura" />
+            </div>
+            <div>
+              <img src="http://github.com/franciscocha.png" alt="alura" />
+            </div>
+          </Categoria2>
         </main>
       </ContainerVideo>
       <Footer />

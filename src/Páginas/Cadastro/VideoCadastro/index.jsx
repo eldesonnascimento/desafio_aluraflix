@@ -121,7 +121,7 @@ export default function NovoVideo() {
               <CampoTexto label="Link do Vídeo" />
               <CampoTexto label="Link da imagem do Vídeo" />
               <CampoTexto label="Escolha uma Categoria" />
-              <CampoTexto label="Descrição" />
+              <CampoTexto label="Descrição"/>
               <CampoTexto
                 className="codigo__seguranca"
                 label="Código de Segurança"

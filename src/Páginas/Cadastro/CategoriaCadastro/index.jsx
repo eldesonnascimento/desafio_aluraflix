@@ -11,13 +11,10 @@ const ContainerCadastro = styled.div`
   font-size: 10px;
   background-color: var(--cor-fundo);
   width: 100%;
-  padding: 32px;
-  height: 100%;
-
-  main {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
+  padding: 30px;
+  height: 100vh;
+  
+  
 
   title {
     color: white;
@@ -28,56 +25,33 @@ const ContainerCadastro = styled.div`
   }
 
   label {
-    display: block;
     color: #f5f5f5;
+    
   }
 
   input {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  ul li {
-    height: 50px;
-    padding-top: 30px;
-    list-style: none;
-    padding-bottom: 30px;
-  }
-  ul li input {
-    background-color: #53585d;
+    background-color: #404142;
     color: white;
     border: none;
     padding-left: 8px;
     border-radius: 4px;
-    display: block;
+    
   }
-  li input:nth-child(5) {
-    height: 153px;
+  input:focus{
+    
+    color: #f5f5f5;
+    background-color: black;
+    border-radius: 6px;
+    padding-left:6px;
+    margin:5px;
   }
   input::placeholder {
     color: white;
   }
-  .descricao {
-    overflow: auto;
-    display: block;
-    border: none;
-    width: 100%;
-    border-radius: 4px;
-    color: white;
-    resize: none;
-    background-color: #53585d;
-    place-content: inherit;
-    box-sizing: border-box;
-  }
-  .descricao::placeholder {
-    color: white;
-    padding-left: 8px;
-  }
-  .codigo__seguranca {
-  }
+ 
+
 `;
-const ContainerBTNN = styled.div`
+const DivBTNCadastro = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -100,56 +74,37 @@ const ContainerBTNN = styled.div`
   }
   /* Estilos para telas maiores que 600px */
   @media (max-width: 300px) {
+    .container {
+      height: 37.3563232421875px;
+      width: 299px;
+    }
     a:nth-child(3) {
       display: none;
       position: absolute;
     }
-  }
-
-  /* Estilos para telas maiores que 960px */
-  @media (max-width: 960px) {
-    a:nth-child(3) {
-      position: absolute;
-      display: none;
-    }
-  }
-`;
+  }`
 function NovaCategoria() {
   return (
     <>
-      <Header/>
+      <Header />
       <main>
         <form>
           <div>
             <ContainerCadastro>
               <div>
-                <title>Novo Vídeo</title>
+                <title>Nova Categoria</title>
               </div>
-              <CampoTexto label="Nome"  />
-              <ul>
-                <li>
-                  <input placeholder="Nome"></input>
-                </li>
-                <li>
-                  <textarea
-                    className="descricao"
-                    type="text"
-                    placeholder="Descrição"
-                  ></textarea>
-                </li>
-                <li>
-                  <input type="color" />
-                </li>
-                <li>
-                  <input type="text" placeholder="Código de segurança" />
-                </li>
-              </ul>
+              <CampoTexto label="Nome" type={"text"} />
+              <CampoTexto label="Descrição" type={"text"}/>
+              <CampoTexto type={"color"} />
+              <CampoTexto label="Código de Segurança" type={"text"} />
+              
               <nav>
-                <ContainerBTNN>
+                <DivBTNCadastro>
                   <Botao>salvar</Botao>
 
                   <Botao>limpar</Botao>
-                </ContainerBTNN>
+                </DivBTNCadastro>
               </nav>
             </ContainerCadastro>
           </div>
