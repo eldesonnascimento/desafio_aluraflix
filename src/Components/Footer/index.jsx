@@ -22,7 +22,7 @@ function Footer(){
   return(
     <>
      <Rodape>
-      <Logo>Aluraflix</Logo>
+      <Logo>Filmesflix</Logo>
      </Rodape>
     </>
   )

@@ -37,7 +37,7 @@ function Header({children}) {
       <nav>
         <NavContainer>
           <div>
-            <Logo to="/">AluraFlix</Logo>
+            <Logo to="/">Filmesflix</Logo>
           </div>
 
           <div>
